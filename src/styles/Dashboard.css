@@ -1,0 +1,310 @@
+
+.body{
+  background-color: #0e0e1a;;
+}
+
+.dashboard-container {
+  padding: 30px;
+  margin: auto;
+  color: white;
+  background-color: #0e0e1a;
+  font-family: 'Segoe UI', sans-serif;
+  margin-bottom: 0px;
+}
+
+/* Welcome section */
+.dashboard-header {
+  margin-bottom: 30px;
+}
+
+.welcome-title {
+  font-size: 28px;
+  font-weight: bold;
+  color: white;
+}
+
+.username {
+  color: #00f2ff;
+}
+
+.welcome-subtext {
+  color: #a0a0a0;
+  margin-bottom: 20px;
+}
+
+/* Stat Cards */
+.stats-grid {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.stat-card {
+  background-color: #1a1a2f;
+  padding: 16px 20px;
+  border-radius: 10px;
+  flex: 1;
+  min-width: 180px;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  transition: transform 0.3s ease;
+}
+
+.stat-card:hover {
+  transform: translateY(-5px);
+}
+
+.stat-card h3 {
+  font-size: 24px;
+  margin-top: 8px;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.stat-card .icon {
+  font-size: 20px;
+}
+
+.stat-card.green h3 {
+  color: #00ff7f;
+}
+
+.stat-card.blue h3 {
+  color: #00d0ff;
+}
+
+.stat-card.purple h3 {
+  color: #c084fc;
+}
+
+.stat-card.orange h3 {
+  color: #ffa726;
+}
+
+/* Two-column Grid */
+.dashboard-main-grid {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  gap: 24px;
+  margin-top: 40px;
+}
+
+/* ----- Live Matches Section ----- */
+.live-matches-section {
+  margin-top: 40px;
+  padding: 20px;
+  border-radius: 10px;
+  background: #161625;
+  color: white;
+}
+
+.live-matches-section h2 {
+  margin-bottom: 16px;
+}
+
+.live-matches-list {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.match-item {
+  display: flex;
+  background: #1f1f2e;
+  border-radius: 10px;
+  overflow: hidden;
+  align-items: center;
+  padding: 12px;
+  gap: 12px;
+}
+
+.match-image {
+  width: 60px;
+  height: 60px;
+  border-radius: 8px;
+  object-fit: cover;
+}
+
+.match-details {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.match-details h3 {
+  margin: 0;
+  font-size: 1rem;
+}
+
+.match-meta {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 8px;
+}
+
+.status-badge {
+  padding: 4px 10px;
+  border-radius: 20px;
+  font-size: 0.8rem;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.status-badge.live {
+  background: #00ff00a8;
+  color: #0f0;
+}
+
+.status-badge.upcoming {
+  background: #ffb347a2;
+  color: #ff9800;
+}
+
+.status-badge.completed {
+  background: #ccc;
+  color: #777;
+}
+
+.view-button {
+  background: #00bfff;
+  color: white;
+  padding: 6px 12px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+/* ----- Quick Join Section ----- */
+.quick-join-section {
+  background: #1a1a2e;
+  border-radius: 12px;
+  padding: 20px;
+  color: white;
+}
+
+.quick-join-card {
+  display: flex;
+  flex-direction: column;
+  background: #222239;
+  border-radius: 12px;
+  overflow: hidden;
+}
+
+.quick-join-image {
+  width: 100%;
+  height: 140px;
+  object-fit: cover;
+}
+
+.quick-join-details {
+  padding: 16px;
+}
+
+.quick-join-details h3 {
+  margin-bottom: 10px;
+}
+
+.quick-join-details p {
+  margin: 6px 0;
+  font-size: 0.9rem;
+}
+
+.fee {
+  color: #00ff00;
+}
+
+.pool {
+  color: #00bfff;
+}
+
+.slots {
+  color: #ffa500;
+}
+
+.join-btn {
+  background-color: #00ff99;
+  color: black;
+  border: none;
+  padding: 10px;
+  margin-top: 12px;
+  width: 100%;
+  border-radius: 6px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+/* ----- Wallet Actions Section ----- */
+.wallet-actions-wrapper {
+  background: #1a1a2e;
+  border-radius: 12px;
+  padding: 20px;
+}
+
+.wallet-actions-card {
+  background-color: #1e1e30;
+  padding: 20px;
+  border-radius: 12px;
+  text-align: center;
+}
+
+.wallet-actions-card h3 {
+  margin-bottom: 16px;
+}
+
+.wallet-actions-card .btn {
+  display: block;
+  width: 100%;
+  margin-bottom: 12px;
+  padding: 12px;
+  border: none;
+  border-radius: 8px;
+  font-weight: bold;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.wallet-actions-card .btn.blue {
+  background-color: #1e90ff;
+  color: white;
+}
+
+.wallet-actions-card .btn.purple {
+  background-color: #9b59b6;
+  color: white;
+}
+
+.wallet-actions-card .btn.white {
+  background-color: #ffffff;
+  color: #333;
+}
+
+.wallet-button {
+  padding: 10px 16px;
+  font-size: 14px;
+}
+
+/* Right panel */
+.right-panel {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  flex: 1;
+  min-width: 300px;
+  max-width: 400px;
+}
+.quick-join-card {
+  display: flex;
+  flex-direction: column-reverse; /* 🔁 This moves the image below the text */
+  background: #222239;
+  border-radius: 12px;
+  overflow: hidden;
+}
+.quick-join-image {
+  width: 100%;
+  height: 160px;
+  object-fit: cover;
+  object-position: top; /* ensures top of image is visible */
+  border-radius: 10px;
+  margin-bottom: 16px;
+}

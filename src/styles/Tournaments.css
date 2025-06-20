@@ -1,0 +1,186 @@
+.tournaments-container {
+  padding: 30px;
+  color: white;
+  background-color: #0e0e1a;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+.tournaments-title {
+  font-size: 26px;
+  font-weight: bold;
+  color: #ffa726;
+  margin-bottom: 20px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.tournament-games {
+  display: flex;
+  gap: 24px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.tournament-card {
+  background-color: #1a1a2f;
+  border-radius: 12px;
+  overflow: hidden;
+  width: 300px;
+  box-shadow: 0 0 12px rgba(0, 0, 0, 0.3);
+  border: 1px solid #2a2a3d;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  transition: transform 0.3s ease;
+}
+
+.tournament-card:hover {
+  transform: translateY(-6px);
+}
+
+.tournament-image-wrapper {
+  position: relative;
+}
+
+.tournament-image {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+}
+
+.tournament-tag {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  background-color: #ff9800;
+  color: black;
+  padding: 4px 8px;
+  font-size: 12px;
+  font-weight: bold;
+  border-radius: 6px;
+  text-transform: uppercase;
+}
+
+.tournament-status {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background-color: #00c853;
+  color: white;
+  padding: 4px 8px;
+  font-size: 12px;
+  font-weight: bold;
+  border-radius: 6px;
+  text-transform: uppercase;
+}
+
+.tournament-status.upcoming {
+  background-color: #00b0ff;
+}
+
+.tournament-status.full {
+  background-color: #d50000;
+}
+
+.tournament-info {
+  padding: 16px;
+}
+
+.tournament-info h3 {
+  font-size: 18px;
+  margin-bottom: 8px;
+  color: #ffffff;
+}
+
+.tournament-meta {
+  list-style: none;
+  padding: 0;
+  margin: 0 0 12px 0;
+  font-size: 14px;
+}
+
+.tournament-meta li {
+  margin-bottom: 6px;
+  color: #cccccc;
+}
+
+.tournament-meta span {
+  font-weight: bold;
+  margin-left: 4px;
+  color: #00e5ff;
+}
+
+.tournament-buttons {
+  display: flex;
+  gap: 10px;
+  justify-content: space-between;
+}
+
+.btn {
+  flex: 1;
+  padding: 10px;
+  font-weight: bold;
+  font-size: 14px;
+  border-radius: 8px;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+.btn.white {
+  background-color: white;
+  color: #1a1a2f;
+}
+
+.btn.white:hover {
+  background-color: #f0f0f0;
+}
+
+.btn.green {
+  background-color: #00c853;
+  color: white;
+}
+
+.btn.green:hover {
+  background-color: #00b248;
+}
+.tournaments-title {
+  font-size: 26px;
+  font-weight: bold;
+  color: #ffa726;
+  margin-bottom: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center; /* <-- Add this */
+  gap: 8px;
+  text-align: center;       /* Optional for multi-line */
+}
+.tournament-filters {
+  display: flex;
+  justify-content: center;
+  gap: 12px;
+  margin-bottom: 20px;
+  flex-wrap: wrap;
+}
+
+.tournament-filters input,
+.tournament-filters select {
+  background-color: #1a1a2f;
+  color: white;
+  border: 1px solid #2a2a3d;
+  border-radius: 8px;
+  padding: 8px 12px;
+  font-size: 14px;
+  outline: none;
+  transition: border 0.2s ease;
+}
+
+.tournament-filters input::placeholder {
+  color: #888;
+}
+
+.tournament-filters input:focus,
+.tournament-filters select:focus {
+  border-color: #00e5ff;
+}

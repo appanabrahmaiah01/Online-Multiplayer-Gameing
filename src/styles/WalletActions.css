@@ -1,0 +1,48 @@
+.wallet-actions-card {
+  background-color: #1e1e2f;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 0 10px rgba(0, 255, 255, 0.1);
+  text-align: center;
+  margin-top: 30px;
+}
+
+.wallet-actions-card h3 {
+  color: #ffffff;
+  margin-bottom: 20px;
+  font-size: 20px;
+  font-weight: 600;
+}
+
+.btn {
+  display: block;
+  width: 100%;
+  margin: 10px 0;
+  padding: 14px;
+  border: none;
+  border-radius: 8px;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  color: #fff;
+}
+
+.btn.blue {
+  background: linear-gradient(135deg, #00c6ff, #0072ff);
+}
+
+.btn.purple {
+  background: linear-gradient(135deg, #9d50bb, #6e48aa);
+}
+
+.btn.white {
+  background: linear-gradient(135deg, #e0e0e0, #a3a3a3);
+  color: #111;
+  font-weight: 600;
+}
+
+.btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 15px rgba(0, 255, 255, 0.3);
+}
