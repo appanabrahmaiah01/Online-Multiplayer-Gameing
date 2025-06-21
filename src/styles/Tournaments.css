@@ -184,3 +184,9 @@
 .tournament-filters select:focus {
   border-color: #00e5ff;
 }
+.no-results {
+  color: #ccc;
+  text-align: center;
+  margin-top: 2rem;
+  font-size: 1.2rem;
+}

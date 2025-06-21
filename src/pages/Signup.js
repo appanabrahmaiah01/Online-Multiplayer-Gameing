@@ -1,21 +1,22 @@
+// src/pages/Signup.js
 import React, { useState } from "react";
-import { useNavigate, Link } from "react-router-dom";  
-import "../styles/Login.css";
+import { Link, useNavigate } from "react-router-dom";
+import "../styles/Signup.css";
 
-const Login = () => {
+const Signup = () => {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
   const navigate = useNavigate();
 
-  const handleLogin = () => {
-    // Your authentication logic here
+  const handleSignup = () => {
+    // Your signup logic here
     localStorage.setItem("isLoggedIn", "true");
     navigate("/");
   };
 
   return (
-    <div className="login-container">
-      <h2>Login</h2>
+    <div className="signup-container">
+      <h2>Register</h2>
       <input
         type="email"
         placeholder="Email"
@@ -28,12 +29,12 @@ const Login = () => {
         value={password}
         onChange={(e) => setPassword(e.target.value)}
       />
-      <button onClick={handleLogin}>Login</button>
+      <button onClick={handleSignup}>Sign Up</button>
       <p>
-        Don't have an account? <Link to="/signup">Register</Link>
+        Already have an account? <Link to="/login">Login</Link>
       </p>
     </div>
   );
 };
 
-export default Login;
+export default Signup;
